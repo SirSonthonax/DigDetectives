@@ -3,31 +3,26 @@
 <html>
 <script>
   function buttontime() {
-    alert("Hello Paul")
+    alert("Hello Paul! If you click the main text, it will change color.")
   }
+	function colorchange() {
+    document.getElementById("sherlock").style.color = "red";
+}
 </script>
 
 <body>
 	
 	<h1>Assignment 13/04/2018</h1>
-	<p> For my research, I want to use some of the tools shown during class to find out if other authors writing Sherlock Holmes 
+	<p id="sherlock" onclick="colorchange()">For my research, I want to use some of the tools shown during class to find out if other authors writing Sherlock Holmes 
 		stories mimic the writing style of Arthur Conan Doyle to some extent. Does the computer reveal different results than 
 		a regular read through? Do some stories feel like Doyle, even though the computer tells us that the writing style is 
 		vastly different? I will do this by comparing the results of running Doyle’s stories through the tools to the results of 
 		running fanfiction through the same tools. Possible aspects to focus on could include uncommon words (are certain 
 		catchphrases overrepresented in fan works?). </p>
+	
 	<a href="https://twitter.com/helloworldpfa">Image Source</a> <br>
 	<img src='download.jpg'> <br>
 <button onclick="buttontime()">Hello there website!</button>
-	
-	<p id="demo" onclick="myFunction()">Click me to change my text color.</p>
-
-<script>
-function myFunction() {
-    document.getElementById("demo").style.color = "red";
-}
-</script>
-
 	
 </body>
 
